@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gonzalo · Desarrollador .NET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--surface:#ffffff;--ink:#14213d;--muted:#55627a;--line:#cdd5e0;--accent:#c2410c;--grid:#e3e9f1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--surface:#172033;--ink:#e8edf5;--muted:#9aa8c0;--line:#2b3750;--accent:#fb923c;--grid:#1d2840;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1624;--surface:#172033;--ink:#e8edf5;--muted:#9aa8c0;--line:#2b3750;--accent:#fb923c;--grid:#1d2840;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:18px;line-height:1.6}
+h1,h2,h3,.sans{font-family:"Familjen Grotesk",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:56px 22px 72px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:56px;font-family:"Familjen Grotesk",system-ui,sans-serif;font-size:16px}
+header.top nav a{margin-left:20px}
+a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1{font-size:clamp(40px,8vw,72px);line-height:1.02;letter-spacing:-.03em;margin:0 0 18px;font-weight:700}
+.lead{max-width:34em;font-size:21px;color:var(--muted);margin:0 0 36px}
+.grid{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow-x:auto;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
+.grid .q{padding:10px 14px;border-bottom:1px solid var(--line);color:var(--muted)}
+.grid .q b{color:var(--accent);font-weight:500}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:8px 14px;border-bottom:1px solid var(--grid);border-right:1px solid var(--grid);white-space:nowrap}
+th{background:var(--grid);font-weight:500;color:var(--muted)}
+td:last-child,th:last-child{border-right:0}
+section{margin-top:72px}
+h2{font-size:28px;letter-spacing:-.01em;margin:0 0 20px}
+.row{display:grid;grid-template-columns:150px 1fr;gap:6px 28px;padding:22px 0;border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row h3{margin:0;font-size:19px}
+.row .meta{color:var(--muted);font-size:15px}
+.row p{margin:0 0 6px}
+.stack{display:flex;flex-wrap:wrap;gap:8px}
+.stack span{border:1px solid var(--line);background:var(--surface);padding:3px 12px;border-radius:999px;font-family:"Familjen Grotesk",system-ui,sans-serif;font-size:15px}
+.contact{font-size:22px}
+footer{margin-top:72px;color:var(--muted);font-size:15px}
+@media (max-width:620px){.row{grid-template-columns:1fr}header.top nav a:first-child{margin-left:0}}
+</style>
+</head>
+<body>
+<main>
+<header class="top">
+  <strong>Gonzalo</strong>
+  <nav><a href="#trabajo">Trabajo</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+</header>
+
+<h1>Software empresarial en .NET, hecho para durar.</h1>
+<p class="lead">Soy Gonzalo, desarrollador .NET en Chile con más de cinco años construyendo plataformas de recursos humanos: capacitación, detección de necesidades y evaluación de desempeño.</p>
+
+<div class="grid" role="region" aria-label="Resumen en formato de consulta SQL">
+  <div class="q"><b>SELECT</b> * <b>FROM</b> Gonzalo <b>WHERE</b> Activo = 1</div>
+  <table>
+    <thead><tr><th>Rol</th><th>Experiencia</th><th>Ubicación</th><th>Idiomas</th><th>Especialidad</th></tr></thead>
+    <tbody><tr><td>Desarrollador .NET</td><td>5+ años</td><td>Chile</td><td>Español, inglés</td><td>Plataformas de RR. HH.</td></tr></tbody>
+  </table>
+</div>
+
+<section id="trabajo">
+  <h2>Trabajo para clientes</h2>
+  <div class="row"><h3>UCSC</h3><div><p>Plataformas de RR. HH. empresariales: LMS, DNC y evaluación de desempeño.</p><span class="meta">VB.NET · ASP.NET WebForms · SQL Server</span></div></div>
+  <div class="row"><h3>Skechers Chile</h3><div><p>Desarrollo y mantenimiento de módulos con reportes en Excel y PDF.</p><span class="meta">EPPlus · jsPDF · procedimientos almacenados</span></div></div>
+  <div class="row"><h3>Skechers Perú</h3><div><p>Migraciones y optimización de consultas en SQL Server.</p><span class="meta">SQL Server · JavaScript · Bootstrap</span></div></div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos propios</h2>
+  <div class="row"><h3>Ágoras Pro</h3><div><p>Plataforma de evaluación de competencias técnicas.</p></div></div>
+  <div class="row"><h3>Parking Escape</h3><div><p>Juego de puzles para Android, hecho en Unity 6.</p></div></div>
+  <div class="row"><h3>Nordic Alliance</h3><div><p>Panel de estadísticas para un clan de Clash Royale.</p></div></div>
+</section>
+
+<section>
+  <h2>Herramientas</h2>
+  <div class="stack"><span>VB.NET</span><span>ASP.NET WebForms</span><span>SQL Server</span><span>JavaScript</span><span>jQuery</span><span>Bootstrap</span><span>EPPlus</span><span>jsPDF</span><span>Visual Studio</span><span>SSMS</span><span>Git</span></div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p class="contact">Escríbeme a <a href="mailto:tu@correo.com">tu@correo.com</a></p>
+</section>
+
+<footer>© 2026 Gonzalo</footer>
+</main>
+</body>
+</html>
